@@ -103,7 +103,7 @@ _________________________________________________________ -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                        <h1>Biodata Pribadi</h1>
+                        <h1>Aplikasi</h1>
                     </div>
 
                 </div>
@@ -124,19 +124,17 @@ _________________________________________________________ -->
                           <div class="box">
 
                             <div class="heading">
-                                <h3 class="text-uppercase">Biodata</h3>
+                                <h3 class="text-uppercase">Tambah Aplikasi</h3>
                             </div>
 
-                            <form>
-                              <div class="col-md-4">
-                                  <img class="img-responsive img-circle" alt="" src="<?php echo base_url()?>assets/img/detailsquare.jpg">
-                              </div>
+                            <form action="<?php echo base_url()?>" method="post">
+
                                 <div class="row">
 
                                     <div class="col-sm-7">
                                         <div class="form-group">
                                           <div class="col-sm-4">
-                                                <label for="password_old">NO KTP</label>
+                                                <label for="password_old">Nama Aplikasi</label>
                                           </div>
                                           <div class="col-sm-8">
                                             <input type="password" class="form-control" id="password_old">
@@ -150,7 +148,20 @@ _________________________________________________________ -->
                                     <div class="col-sm-7">
                                         <div class="form-group">
                                           <div class="col-sm-4">
-                                                <label for="password_old">Nama</label>
+                                                <label for="password_old">Bidang</label>
+                                          </div>
+                                          <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="password_old">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="col-sm-7">
+                                        <div class="form-group">
+                                          <div class="col-sm-4">
+                                                <label for="password_old">Deskripsi</label>
                                           </div>
                                           <div class="col-sm-8">
                                             <input type="password" class="form-control" id="password_old">
@@ -164,222 +175,108 @@ _________________________________________________________ -->
                                     <div class="col-sm-7">
                                         <div class="form-group">
                                           <div class="col-sm-4">
-                                                <label for="password_old">Tempat Lahir</label>
+                                                <label for="password_old">Tahun Pembuatan</label>
                                           </div>
                                           <div class="col-sm-8">
                                             <input type="password" class="form-control" id="password_old">
                                           </div>
                                         </div>
                                     </div>
-
                                     <br>
                                     <br>
                                     <br>
-
                                     <div class="col-sm-7">
                                         <div class="form-group">
                                           <div class="col-sm-4">
-                                                <label for="password_old">Tanggal Lahir</label>
+                                                <label for="password_old">Bahasa Pemrograman</label>
                                           </div>
                                           <div class="col-sm-8">
                                             <input type="password" class="form-control" id="password_old">
                                           </div>
                                         </div>
                                     </div>
-
                                     <br>
                                     <br>
                                     <br>
-
                                     <div class="col-sm-7">
                                         <div class="form-group">
                                           <div class="col-sm-4">
-                                                <label for="password_old">Alamat</label>
+                                                <label for="password_old">Link Demo</label>
                                           </div>
                                           <div class="col-sm-8">
                                             <input type="password" class="form-control" id="password_old">
                                           </div>
                                         </div>
                                     </div>
+                                    <br>
+                                    <br>
+                                    <br>
+
 
 
 
                                 </div>
                                 <!-- /.row -->
                                 <br>
-                                <div class="row">
-                                  <div class="col-md-2">
-
-                                  </div>
-                                  <div class="col-sm-10">
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">NO HP</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Jenis Kelamin</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Agama</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Status</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Jenis Kelamin</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Email</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Facebook</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Google Plus</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Instagram</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Username</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Password</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Password</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="file" name="foto"class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>
-                              </div>
-                              <br>
-                              <br>
-                              <br>
-                                <!-- /.row -->
-
+                                <br>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-save"></i>Simpan Biodata</button>
+                                    <button type="submit" class="btn btn-template-main"><i class="fa fa-save"></i>Simpan </button>
                                 </div>
                             </form>
+                          </div>
+
 
                         </div>
                         <!-- /.box -->
 
+
+                        <div class="col-md-12" id="customer-orders">
+
+                       <div class="box">
+
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>Aplikasi</th>
+                                            <th>Bidang</th>
+                                            <th>Deskripsi</th>
+                                            <th>Tahun</th>
+                                            <th>Bahasa</th>
+                                            <th>Link</th>
+                                            <th>Edit</th>
+                                            <th>Hapus</th>
+                                            <th>Foto</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th># 1735</th>
+                                            <td>22/06/2013</td>
+                                            <td>$ 150.00</td>
+                                            <td>$ 150.00</td>
+                                            <td>$ 150.00</td>
+                                            <td>$ 150.00</td>
+                                            <td>$ 150.00</td>
+
+                                            <td><a href="customer-order.html" class="btn btn-primary">Edit</a>
+                                            </td>
+                                            <td><a href="customer-order.html" class="btn  btn-danger">Hapus</a>
+                                            </td>
+                                            <td><a href="customer-order.html" class="btn  btn-danger">Foto</a>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+
+                        </div>
+                        <!-- /.box -->
+
+                    </div>
 
 
                     </div>

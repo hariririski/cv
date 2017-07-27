@@ -26,6 +26,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          $this->load->view('Data_biodata');
        }
 
+       public function data_keahlian()
+      {
+        // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
+        // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
+        // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
+        $this->load->view('data_keahlian');
+      }
+
+      public function data_pengalaman_kerja()
+     {
+       // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
+       // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
+       // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
+       $this->load->view('data_pengalaman_kerja');
+     }
+     public function data_organisasi()
+    {
+      // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
+      // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
+      // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
+      $this->load->view('data_organisasi');
+    }
+
+    public function data_lulusan()
+   {
+     // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
+     // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
+     // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
+     $this->load->view('data_lulusan');
+   }
+   public function data_prestasi()
+  {
+    // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
+    // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
+    // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
+    $this->load->view('data_prestasi');
+  }
+
 
 
 

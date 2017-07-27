@@ -80,10 +80,19 @@ $route['data_keahlian'] = 'biodata/data_keahlian';
 $route['tambah_keahlian'] = 'biodata/tambah_keahlian';
 $route['edit_keahlian'] = 'biodata/edit_keahlian';
 
+  /*-----------------------------------------------------------------------*/
+$route['data_lulusan'] = 'biodata/data_lulusan';
+$route['tambah_lulusan'] = 'biodata/tambah_lulusan';
+$route['edit_lulusan'] = 'biodata/edit_lulusan';
+
+    /*-----------------------------------------------------------------------*/
+$route['data_prestasi'] = 'biodata/data_prestasi';
+$route['tambah_prestasi'] = 'biodata/tambah_prestasi';
+$route['edit_prestasi'] = 'biodata/edit_prestasi';
 /*-----------------------------------------------------------------------*/
 $route['aplikasi'] = 'aplikasi';
-$route['tambah_aplikasi'] = 'aplikasi/tambah_aplikasi';
-$route['foto_aplikasi'] = 'aplikasi/tambah_foto_aplikasi';
+$route['data_aplikasi'] = 'aplikasi/data_aplikasi';
+$route['foto_aplikasi'] = 'aplikasi/foto_aplikasi';
 $route['edit_aplikasi'] = 'aplikasi/edit_aplikasi';
 $route['edit_foto_aplikasi'] = 'aplikasi/edit_foto_aplikasi';
 /*-----------------------------------------------------------------------*/

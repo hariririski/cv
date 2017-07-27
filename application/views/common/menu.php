@@ -25,6 +25,10 @@
              <ul class="dropdown-menu">
                  <li ><a href="<?php echo base_url()?>data_biodata">Biodata</a>
                  </li>
+                 <li ><a href="<?php echo base_url()?>data_lulusan">Lulusan</a>
+                 </li>
+                 <li ><a href="<?php echo base_url()?>data_prestasi">Prestasi</a>
+                 </li>
                  <li><a href="<?php echo base_url()?>data_keahlian">Keahlian</a>
                  </li>
                  <li><a href="<?php echo base_url()?>data_organisasi">Organisasi</a>
