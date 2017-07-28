@@ -128,8 +128,11 @@ _________________________________________________________ -->
                             </div>
 
                             <form>
+                              <?php
+                                 foreach($lihat as $biodata){
+                               ?>
                               <div class="col-md-4">
-                                  <img class="img-responsive img-circle" alt="" src="<?php echo base_url()?>assets/img/detailsquare.jpg">
+                                  <img class="img-responsive img-circle" alt="" width="90%"  src="<?php echo base_url()?>uploads/<?php echo $biodata->foto?>">
                               </div>
                                 <div class="row">
 
@@ -139,7 +142,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">NO KTP</label>
                                           </div>
                                           <div class="col-sm-8">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->no_ktp?>" required class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -153,7 +156,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Nama</label>
                                           </div>
                                           <div class="col-sm-8">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->nama?>"  required  class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -167,7 +170,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Tempat Lahir</label>
                                           </div>
                                           <div class="col-sm-8">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->tempat_lahir?>" required   class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -182,7 +185,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Tanggal Lahir</label>
                                           </div>
                                           <div class="col-sm-8">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="date"value="<?php echo $biodata->tgl_lahir?>" required   class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -197,7 +200,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Alamat</label>
                                           </div>
                                           <div class="col-sm-8">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->alamat?>" required   class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -218,33 +221,27 @@ _________________________________________________________ -->
                                                 <label for="password_old">NO HP</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->no_hp?>" required   class="form-control" >
                                           </div>
                                         </div>
                                     </div>
                                     <br>
                                     <br>
                                     <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Jenis Kelamin</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
+
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                           <div class="col-sm-2">
                                                 <label for="password_old">Agama</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <select  required   class="form-control" id="sel1">
+                                              <option><?php echo $biodata->agama?></option>
+                                              <option>Islam</option>
+                                              <option>Kristen</option>
+                                              <option>Budha</option>
+                                              <option>Hindu</option>
+                                            </select>
                                           </div>
                                         </div>
                                     </div>
@@ -257,7 +254,12 @@ _________________________________________________________ -->
                                                 <label for="password_old">Status</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <select class="form-control" id="sel1">
+                                              <option><?php echo $biodata->status?></option>
+                                              <option>Belum Menikah</option>
+                                              <option>Sudah Menikah</option>
+
+                                            </select>
                                           </div>
                                         </div>
                                     </div>
@@ -265,12 +267,16 @@ _________________________________________________________ -->
                                     <br>
                                     <br>
                                     <div class="col-sm-12">
-                                        <div class="form-group">
+                                      <div class="form-group">
                                           <div class="col-sm-2">
                                                 <label for="password_old">Jenis Kelamin</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <select  required  class="form-control" id="sel1">
+                                              <option><?php echo $biodata->jenis_kelamin?></option>
+                                              <option>Laki-Laki</option>
+                                              <option>Perempuan</option>
+                                            </select>
                                           </div>
                                         </div>
                                     </div>
@@ -283,7 +289,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Email</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="email" value="<?php echo $biodata->email?>" required   class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -296,7 +302,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Facebook</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->facebook?>" class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -309,7 +315,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Google Plus</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->googleplus?>" class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -322,7 +328,7 @@ _________________________________________________________ -->
                                                 <label for="password_old">Instagram</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->instagram?>" class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -332,23 +338,10 @@ _________________________________________________________ -->
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                           <div class="col-sm-2">
-                                                <label for="password_old">Username</label>
+                                                <label for="password_old">Username </label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
-                                          </div>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="col-sm-12">
-                                        <div class="form-group">
-                                          <div class="col-sm-2">
-                                                <label for="password_old">Password</label>
-                                          </div>
-                                          <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="password_old">
+                                            <input type="text" value="<?php echo $biodata->username?>"  required   class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -361,7 +354,20 @@ _________________________________________________________ -->
                                                 <label for="password_old">Password</label>
                                           </div>
                                           <div class="col-sm-9">
-                                            <input type="file" name="foto"class="form-control" id="password_old">
+                                            <input type="password"  required   class="form-control" >
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                          <div class="col-sm-2">
+                                                <label for="password_old">Foto</label>
+                                          </div>
+                                          <div class="col-sm-9">
+                                            <input type="file" name="foto"class="form-control" >
                                           </div>
                                         </div>
                                     </div>
@@ -375,6 +381,9 @@ _________________________________________________________ -->
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-template-main"><i class="fa fa-save"></i>Simpan Biodata</button>
                                 </div>
+                                <?php
+                                    }
+                                 ?>
                             </form>
 
                         </div>

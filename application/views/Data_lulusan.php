@@ -249,20 +249,28 @@ _________________________________________________________ -->
                                         </tr>
                                     </thead>
                                     <tbody>
+                                      <?php
+                                        $i=0;
+                                         foreach($lihat as $lulusan){
+                                          $i++;
+                                       ?>
                                         <tr>
-                                            <th># 1735</th>
-                                            <td>22/06/2013</td>
-                                            <td>$ 150.00</td>
-                                            <td>$ 150.00</td>
-                                            <td>$ 150.00</td>
-                                            <td>$ 150.00</td>
-                                            <td>$ 150.00</td>
+                                            <th><?php echo $i?></th>
+                                            <td><?php echo $lulusan->nama_institusi?></td>
+                                            <td><?php echo $lulusan->jenjang?></td>
+                                            <td><?php echo $lulusan->jurusan?></td>
+                                            <td><?php echo $lulusan->ipk?></td>
+                                            <td><?php echo $lulusan->tahun_masuk?></td>
+                                            <td><?php echo $lulusan->tahun_lulus?></td>
+
                                             <td><a href="customer-order.html" class="btn btn-primary">Edit</a>
                                             </td>
                                             <td><a href="customer-order.html" class="btn  btn-danger">Hapus</a>
                                             </td>
                                         </tr>
-
+                                        <?php
+                                          }
+                                         ?>
                                     </tbody>
                                 </table>
                             </div>

@@ -190,16 +190,23 @@ _________________________________________________________ -->
                                         </tr>
                                     </thead>
                                     <tbody>
+                                      <?php
+                                        $i=0;
+                                         foreach($lihat as $prestasi){
+                                          $i++;
+                                       ?>
                                         <tr>
-                                            <th># 1735</th>
-                                            <td>22/06/2013</td>
-                                            <td>$ 150.00</td>
+                                            <th><?php echo $i?></th>
+                                            <td><?php echo $prestasi->nama_prestasi?></td>
+                                            <td><?php echo $prestasi->tahun?></td>
                                             <td><a href="customer-order.html" class="btn btn-primary">Edit</a>
                                             </td>
                                             <td><a href="customer-order.html" class="btn  btn-danger">Hapus</a>
                                             </td>
                                         </tr>
-
+                                        <?php
+                                        }
+                                         ?>
                                     </tbody>
                                 </table>
                             </div>

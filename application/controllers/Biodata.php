@@ -6,7 +6,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          parent::__construct();
   			 $this->load->helper('url');
   			 $this->load->library('session');
-         //$this->load->model('M_Jalan_rusak');
+         $this->load->model('M_Biodata');
+         $this->load->model('M_Lulusan');
+         $this->load->model('M_Prestasi');
   			 $this->load->database();
   			 }
 
@@ -20,10 +22,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
        	}
         public function data_biodata()
        {
-         // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
-         // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
-         // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
-         $this->load->view('Data_biodata');
+
+         $data['lihat'] = $this->M_Biodata->lihat_biodata();
+         $this->load->view('Data_biodata',$data);
        }
 
        public function data_keahlian()
@@ -51,17 +52,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     public function data_lulusan()
    {
-     // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
-     // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
-     // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
-     $this->load->view('data_lulusan');
+     $data['lihat'] = $this->M_Lulusan->lihat_lulusan();
+     $this->load->view('data_lulusan',$data);
    }
    public function data_prestasi()
   {
-    // $data['ringan'] = $this->M_Jalan_rusak->jumlah_ringan();
-    // $data['berat'] = $this->M_Jalan_rusak->jumlah_berat();
-    // $data['belum_tembus'] = $this->M_Jalan_rusak->jumlah_belum_tembus();
-    $this->load->view('data_prestasi');
+    $data['lihat'] = $this->M_Prestasi->lihat_Prestasi();
+    $this->load->view('data_prestasi',$data);
   }
 
 
